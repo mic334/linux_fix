@@ -11,5 +11,6 @@ Before running IQmol, you must first install the **fake `qt5-default` package** 
 Once the package is installed, you can launch IQmol:
 
 ```bash
+dpgk -i ./qt5-default_5.99.99+fake-13ubuntu37_all.deb
 ./iqmol.exe
 
