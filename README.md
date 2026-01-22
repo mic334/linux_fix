@@ -24,6 +24,21 @@ This solution was inspired by information and suggestions discussed in the follo
 
 ---
 
+---
 
+### 2. Molden – Compilation on Modern Ubuntu Versions
+
+This fix provides instructions and notes to **compile Molden from source** on modern Ubuntu systems (Ubuntu 22.04 and later), where precompiled binaries or legacy build configurations may no longer work out of the box.
+
+Due to updates in modern Fortran compilers and stricter argument checking, the original build process may fail. The provided instructions describe how to modify the Makefiles and compile Molden successfully using recent compiler versions.
+
+This section serves as an alternative visualization solution when **IQmol is not available or not functioning correctly** on newer Linux distributions.
+
+The compilation approach is based on the official Molden source and adapted for modern systems.
+
+This solution was inspired by information and suggestions discussed in the following reference:
+
+- [reddit.com](https://www.reddit.com/r/comp_chem/comments/v7865d/tutorial_compiling_molden_from_source_on_debian/)
+---
 
 
