@@ -2,7 +2,7 @@
 
 
 Source code download 
-https://www.theochem.ru.nl/molden/
+- (https://www.theochem.ru.nl/molden/)
 
 The source code is contained in the archive you download. After extraction, the relevant files are located in the `src/` directory.
 
@@ -51,5 +51,6 @@ Enjoy using Molden and have fun!
 The installation procedure described in this README is not originally mine.  
 It is based on the instructions available at the following link, which I adapted and collected here for convenience:
 
-https://www.reddit.com/r/comp_chem/comments/v7865d/tutorial_compiling_molden_from_source_on_debian/
+- [reddit.com](https://www.reddit.com/r/comp_chem/comments/v7865d/tutorial_compiling_molden_from_source_on_debian/)
+
 
