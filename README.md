@@ -17,31 +17,39 @@ Edit the main `Makefile` and add the following flags to **every uncommented `FFL
 
 Then edit the Makefile located in:
 
-src/ambfor/Makefile
+```bash
+vi src/ambfor/Makefile
+```
 
 and add the same flags (`-w -fallow-argument-mismatch`) to all active `FFLAG` entries there as well.
 
 Once both Makefiles have been updated, compile the program by running the following command from the parent directory:
 
+```bash
 make
+```
 
 After successful compilation, make the generated binaries executable:
 
+```bash
 chmod u+x bin/molden
 chmod u+x bin/gmolden
+```
 
 Test the installation by running the programs directly from the command line:
 
-'''bash
+```bash
 ./bin/molden
 ./bin/gmolden
-'''
+```
 
 If the programs start correctly, the installation was successful.
 
 For maximum convenience, you can add the `bin/` directory to your shell environment so that the executables can be called from anywhere. For example, add the following line to your `.bashrc`, `.bash_profile`, or `.zshrc` file:
 
+```bash
 export PATH=$PATH:/path/to/molden/bin
+```
 
 Reload your shell configuration or open a new terminal session.
 
