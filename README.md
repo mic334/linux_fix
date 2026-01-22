@@ -32,7 +32,7 @@ This fix provides instructions and notes to **compile Molden from source** on mo
 
 Due to updates in modern Fortran compilers and stricter argument checking, the original build process may fail. The provided instructions describe how to modify the Makefiles and compile Molden successfully using recent compiler versions.
 
-This section serves as an alternative visualization solution when **IQmol is not available or not functioning correctly** on newer Linux distributions.
+This section serves as an alternative visualization solution when **Molden is not available or not functioning correctly** on newer Linux distributions.
 
 The compilation approach is based on the official Molden source and adapted for modern systems.
 
