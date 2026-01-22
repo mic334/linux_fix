@@ -1,29 +1,55 @@
-# Linux Fixes Repository
-
-This repository is organized to host different fixes and workarounds for specific issues encountered on Linux systems.
-
-The `main` branch serves as an index and entry point, while each solution is maintained in its own dedicated directory (or branch, if needed in the future).
-
-At the moment, only one fix is available.
-
----
-
-## Available Fixes
-
-### 1. IQmol 2.15 – Qt Issue on Ubuntu 24.04 LTS
-
-This fix was created to address a compatibility problem between **IQmol 2.15** and **Qt libraries** on **Ubuntu 24.04 LTS**.
-
-On this Ubuntu release, IQmol 2.15 may fail to start or show graphical issues due to changes in the Qt framework and library versions shipped with the system.
-
-The solution provided here contains notes and files aimed at resolving or working around this Qt-related problem, allowing IQmol 2.15 to run correctly on Ubuntu 24.04 LTS.
-
-This solution was inspired by information and suggestions discussed in the following reference:
-
-- [Qt5 default not in Ubuntu 21.04 – Ask Ubuntu](https://askubuntu.com/questions/1335184/qt5-default-not-in-ubuntu-21-04)
-
----
+# Molden Installation Guide
 
 
+Source code download 
+https://www.theochem.ru.nl/molden/
 
+The source code is contained in the archive you download. After extraction, the relevant files are located in the `src/` directory.
+
+This README describes the full procedure to compile, install, and run Molden from source on a Unix-like system (Linux or macOS).
+
+A working Fortran compiler (e.g. gfortran) and `make` are required (see package list)
+
+First, download and extract the source archive. Move into the main project directory.
+
+Edit the main `Makefile` and add the following flags to **every uncommented `FFLAG`**:
+-w -fallow-argument-mismatch
+
+Then edit the Makefile located in:
+
+src/ambfor/Makefile
+
+and add the same flags (`-w -fallow-argument-mismatch`) to all active `FFLAG` entries there as well.
+
+Once both Makefiles have been updated, compile the program by running the following command from the parent directory:
+
+make
+
+After successful compilation, make the generated binaries executable:
+
+chmod u+x bin/molden
+chmod u+x bin/gmolden
+
+Test the installation by running the programs directly from the command line:
+
+./bin/molden
+./bin/gmolden
+
+If the programs start correctly, the installation was successful.
+
+For maximum convenience, you can add the `bin/` directory to your shell environment so that the executables can be called from anywhere. For example, add the following line to your `.bashrc`, `.bash_profile`, or `.zshrc` file:
+
+export PATH=$PATH:/path/to/molden/bin
+
+Reload your shell configuration or open a new terminal session.
+
+Enjoy using Molden and have fun!
+
+
+## Acknowledgement
+
+The installation procedure described in this README is not originally mine.  
+It is based on the instructions available at the following link, which I adapted and collected here for convenience:
+
+https://www.reddit.com/r/comp_chem/comments/v7865d/tutorial_compiling_molden_from_source_on_debian/
 

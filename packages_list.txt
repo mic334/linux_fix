@@ -1,0 +1,11 @@
+sudo apt-get install gfortran 
+sudo apt-get install libX11-6
+sudo apt-get install libX11-dev
+sudo apt-get install libgl1-mesa-glx
+sudo apt-get install libgl1-mesa-dev
+sudo apt-get install build-essential
+sudo apt-get install mesa-common-dev
+sudo apt-get install libglu1-mesa-dev
+sudo apt-get install libxmu-dev
+sudo apt-get install makedepend or xutils-dev
+sudo apt-get install wget
