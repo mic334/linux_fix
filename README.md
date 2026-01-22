@@ -32,8 +32,10 @@ chmod u+x bin/gmolden
 
 Test the installation by running the programs directly from the command line:
 
+'''bash
 ./bin/molden
 ./bin/gmolden
+'''
 
 If the programs start correctly, the installation was successful.
 
